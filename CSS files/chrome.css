@@ -10,12 +10,13 @@ body {
     padding: 0;
     background: url(/Images/loginpage.jpg);
     background-size: cover;
+    font-family: Oswald, sans-serif;
 }
 
 /* Login Box */
 .login-box {
-    width: 320px;
-    height: 420px;
+    width: 420px;
+    height: 520px;
     background: lightgrey;
     color: black;
     left: 35%;
@@ -28,39 +29,56 @@ body {
     margin: 0;
     padding: 0;
 }
-
+/* End of Login Box */
 
 /* Sign Up Box */
+
 .sign-up-box {
-    width: 320px;
-    height: 420px;
+    width: 420px;
+    height: 520px;
     background:  white;
-    color: blue;
+    color: black;
     left: 50%;
     top: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
-    padding-left: 45px;
+    padding-left: 20px;
 }
 
 .sign-up-box h1 {
     margin: 0;
-    padding: 0;
+    padding: 0px;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
-.sign-up-box input[type="text"], .sign-up-box input[type="password"] {
-    width: 225px;
+.sign-up-box input[type="text"], .sign-up-box input[type="password"], .sign-up-box input[type="tel"], .sign-up-box input[type="email"] {
+    width: 370px;
     margin-bottom: 10px;
-    height: 25px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: #F5F5F5;
+    padding-left: 10px;
+    border-radius: 5px;
 }
 
+.sign-up-box input[type="text"]:hover, .sign-up-box input[type="password"]:hover, .sign-up-box input[type="tel"]:hover, .sign-up-box input[type="email"]:hover {
+    background: #ECECEC;
+}
+
+.sign-up-box input[type="text"]:focus, .sign-up-box input[type="password"]:focus, .sign-up-box input[type="tel"]:focus, .sign-up-box input[type="email"]:focus {
+    background: #F5F5F5;
+    border: solid black 1px;
+}
 .sign-up-box input[type="submit"] {
-    height: 40px;
-    width: 250px;
+    height: 60px;
+    width: 380px;
     border: none;
     outline: none;
-    background: blue;
+    background: black;
     color: white;
     font-size: 18px;
 }
@@ -69,3 +87,4 @@ body {
     cursor: pointer;
     background: red;
 }
+/* End of Sign Up Box */
