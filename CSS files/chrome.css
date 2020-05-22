@@ -8,11 +8,12 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(Images/loginpage.jpg);
-    background-size: cover;  
+    background: url(/Images/loginpage.jpg);
+    background-size: cover;
 }
 
-.left-box {
+/* Login Box */
+.login-box {
     width: 320px;
     height: 420px;
     background: lightgrey;
@@ -20,16 +21,51 @@ body {
     left: 35%;
     top: 50%;
     position: absolute;
-    transform: translate(-100%, -50%)
+    transform: translate(-100%, -50%);
 }
 
-.right-box {
+.login-box h1 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Sign Up Box */
+.sign-up-box {
     width: 320px;
     height: 420px;
-    background:  blue;
-    color: black;
+    background:  white;
+    color: blue;
     left: 50%;
     top: 50%;
     position: absolute;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding-left: 45px;
+}
+
+.sign-up-box h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.sign-up-box input[type="text"], .sign-up-box input[type="password"] {
+    width: 225px;
+    margin-bottom: 10px;
+    height: 25px;
+}
+
+.sign-up-box input[type="submit"] {
+    height: 40px;
+    width: 250px;
+    border: none;
+    outline: none;
+    background: blue;
+    color: white;
+    font-size: 18px;
+}
+
+.sign-up-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: red;
 }
