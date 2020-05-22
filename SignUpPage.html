@@ -1,25 +1,48 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="footer.css"/>
-        <title>Justice League Website</title>
-    </head>
-    
-        <!--Ben create Sign Up form here-->
-        <header>
-            <table>
-                <theader>
-                    <tr>
-                     <td></td>
-                     <td></td>
-                    </tr>
-                </theader>
-            </table>
-        </header>
-        <!--End of Ben's work-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="chrome.css"/>
+<title>Login / Sign up</title>
+</head>
 
-        <!--Dan create Log In form here-->
+<!-- Ben create Sign Up form here -->
+    <body>
+        <!-- Body -->
+            <!-- Sign Up Box -->
+                <div id="signup-box">
+                <div class="left-box">
+                    <form action="/Login">
+                        <h1>Sign Up</h1>
 
-        <!--End of Dan's work-->
-    
+                            <input type="text" name="first-name" placeholder="First Name"/>
+                            <input type="text" name="last-name" placeholder="Last Name"/>
+                            <input type="text" name="age" placeholder="Age"/>
+                            <input type="text" name="mobile-number" placeholder="Mobile Number"/>
+                            <input type="text" name="email" placeholder="Email"/>
+                            <input type="password" name="password" placeholder="Password"/>
+                            <input type="password" name="confirmpassword" placeholder="Confirm Password"/></br>
+                            <input type="submit" name="signup-button" placeholder="Sign Up"/>
+                        </form>
+                    </div>
+                </div>
+<!-- End of Ben's work -->
+
+<!-- Dan create Login form here -->
+            <!-- Login Box -->
+                <div id="signup-box">
+                <div class="right-box">
+                    <form action="/Login">
+                        <h1>Login</h1>
+                            <input type="text" name="email" placeholder="Email"/>
+                            <input type="password" name="password" placeholder="Password"/></br>
+                            <button type="submit">Login</button></br>
+
+                            <label for="Remember Me"><input id="remember-me" type="radio" name="remember-me" checked>Remember Me</label>
+                        </form>
+                    </div>
+                </div>
+</body>
+<!-- End of Dan's Work -->
 </html>
