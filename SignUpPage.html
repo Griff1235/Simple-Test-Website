@@ -6,45 +6,39 @@
 <link rel="stylesheet" type="text/css" href="CSS files/chrome.css"/>
 <title>Login / Sign up</title>
 </head>
+<body>
+<!-- Body -->
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn-colour"></div>
+                <button type="button" class="toggle-top-btn" onclick="login()">Log in</button>
+                <button type="button" class="toggle-top-btn" onclick="signup()">Sign Up</button>
+        </div>
+    
+<!-- Login Form -->
+        <form class="inputs" id="login">
 
-<!-- Ben create Sign Up form here -->
-    <body>
-        <!-- Body -->
-            <!-- Sign Up Box -->
-                <div id="sign-up-box">
-                <div class="sign-up-box">
-                    <form action="/Login">
-                        <h1>Sign Up</h1>
+            <input type="email" class="input-field" name="email" id="email" placeholder="Email"/>
+            <input type="password" class="input-field" name="password" id="password" placeholder="Password"/></br>
+            <input type="checkbox" class="check-box"><span>Remember Me</span></input>
+            <button type="submit" class="submit-btn" onclick="getInfo()">Log in</button>
+        </form>
 
-                            <input type="text" name="first-name" placeholder="First Name" required/>
-                            <input type="text" name="last-name" placeholder="Last Name" required/>
-                            <input type="text" name="age" placeholder="Age" required/>
-                            <input type="tel" name="mobile-number" maxlength="11" minlength="11" placeholder="Mobile Number" required/>
-                            <input type="email" name="email" placeholder="Email" required/>
-                            <input type="password" name="password" placeholder="Password" required/>
-                            <input type="password" name="confirmpassword" placeholder="Confirm Password" required/></br>
-                            <input type="submit" name="signup-button" value="Create Account"/>
-                        </form>
-                    </div>
-                </div>
-<!-- End of Ben's work -->
+<!-- Sign Up Form -->
+        <form  class="inputs" id="sign-up">
 
-<!-- Dan create Login form here -->
-            <!-- Login Box -->
-                <div id="signup-box">
-                <div class="login-box">
-                    <form action="/Login">
-                        <h1>Login</h1>
-                            <input type="text" name="email" placeholder="Email"/>
-                            <input type="password" name="password" placeholder="Password"/></br>
-                            <input type="submit" name="login-button" value="Login"/></br>
-                            <a href="#">Forgot password? Click here</a></br>
-                            <label for="Remember Me"><input id="remember-me" type="radio" name="remember-me" checked>Remember Me</label>
+            <input type="text" name="first-name" class="input-field" placeholder="First Name" required/>
+            <input type="text" name="last-name" class="input-field" placeholder="Last Name" required/>
+            <input type="text" name="age" class="input-field" placeholder="Age" required/>
+            <input type="tel" name="mobile-number" class="input-field" maxlength="11" minlength="11" placeholder="Mobile Number" required/>
+            <input type="email" name="email" class="input-field" placeholder="Email" required/>
+            <input type="password" name="password" class="input-field" placeholder="Password" required/>
+            <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" class="input-field" required/></br>
+            <input type="checkbox" class="check-box" required><span>I agree to the <a href="#">terms & conditions</a></span></input></br>
+            <button type="submit" class="submit-btn">Create Account</button>
+        </form>
+    </div>
 
-                            
-                        </form>
-                    </div>
-                </div>
+    <script src="js/main.js"></script>
 </body>
-<!-- End of Dan's Work -->
 </html>
