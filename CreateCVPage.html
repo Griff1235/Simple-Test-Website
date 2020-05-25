@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="CSS files/chrome.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
         <title>Create Your CV</title>
     </head>
     <body>
+        <!-- Body -->
         <h1>Create Your CV</h1>
         <p>This allows you to have employers search for you and offer you jobs without you having to do anything!</p>
-        <form>
+        <div class="form-box">
 
+        <!-- Create CV Form -->
+        <form class="inputs" id="create-cv">
+            <input type="text" class="input-field" name="name" id="name" placeholder="Full Name"/>
+            <input type="date" class="input-field" name="dob" id="dob" placeholder="Date of Birth"/>
+            <input type="text" class="input-field" name="first-address-line" id="first-address-line" placeholder="Address Line 1"/>
+            <input type="text" class="input-field" name="second-address-line" id="second-address-line" placeholder="Address Line 2"/>
+            <input type="text" class="input-field" name="third-address-line" id="third-address-line" placeholder="Address Line 3"/>
+            <input type="text" class="input-field" name="postcode" id="postcode" placeholder="Postcode"/>
         </form>
+        </div>
     </body>
 </html>
